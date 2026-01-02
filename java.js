@@ -1,21 +1,16 @@
-let likes = 0;
-function toggleLike(botao){
-    const texto = botao.querySelector(".text");
-    const contador = document.getElementById("likeCount");
+/*const btn = document.getElementById("btn")
+const aba = document.getElementById("aba")
 
-    if(botao.classList.contains("liked")){
-        botao,classList.remove("liked");
-        texto.innerText = "Curtir";
-        likes--;
-    }
+menu.addEventListener("click", ()=>{
+    aba.classList.toggle("ativa")
+})*/
 
-    else{
-        botao.classList.add("liked");
-        texto.innerText =" Gostei";
-        likes++;
-    }
+function clickMenu(){
+    if(menu.style.display == 'block'){
+    menu.style.display='none'
+}
 
-    contador.innerText = likes;
-
-
+else{
+      menu.style.display='block'
+}
 }
