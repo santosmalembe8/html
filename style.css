@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+
+}
+
+header{
+    background-color: #242424;
+}
+nav{
+    display: flex;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    padding: 10px;
+}
+
+ul li{
+    padding: 10px 5px;
+}
+
+@media screen and (max-width:430px){
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    transition: 0.9s;
+  }
+
+  ul{
+    display: block;
+  }
+
+  ul li a:hover{
+    color: red;
+  }
+
+
+}
